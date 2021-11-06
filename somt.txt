@@ -1,0 +1,1 @@
+./xmrig --cuda -o kp.unmineable.com:3333 -u 8881dN96ZHg1Y3AFaxBzsQNmjwmc21oivLyLpQJ4PoEfUe9hFo1WQAVWFAPA7VXVWPEBHHAeAcYuzStUp4dXCgji9zCcqtT -k --nicehash --coin monero -a kawpow
